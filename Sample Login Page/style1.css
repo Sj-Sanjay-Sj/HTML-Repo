@@ -1,0 +1,99 @@
+/* style1.css */
+
+/* Reset some default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+.Center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+form {
+    width: 300px;
+}
+
+.txt_field {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.txt_field input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: black;
+    border: none;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label {
+    transform: translateY(-20px);
+    font-size: 14px;
+    color: black;
+}
+
+.txt_field input:focus ~ span::before,
+.txt_field input:valid ~ span::before {
+    width: 100%;
+}
+
+.txt_field label {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    font-size: 16px;
+    color: black;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+.txt_field span::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    transition: all 0.3s ease;
+}
+
+button.btn-login {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    background-color: black;
+    transition: background-color 0.3s ease;
+}
+
+button.btn-login:hover {
+    background-color: gray;
+}

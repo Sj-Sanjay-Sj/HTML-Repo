@@ -1,0 +1,14 @@
+.logo{
+    font-size: 20px;
+}
+.nav{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+.title{
+    font-size: 20px;
+}
+p{
+    font-size: 30px;
+}

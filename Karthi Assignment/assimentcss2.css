@@ -1,0 +1,31 @@
+body{
+    background-image: linear-gradient(rgb(88, 88, 255),rgb(75, 244, 75));
+}
+.gReen{
+    background-image: linear-gradient(rgb(5, 5, 53),rgb(5, 56, 5));
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 500px;
+    margin-right: 500px;
+}
+.baCk{
+    text-align: center;
+}
+*{
+    color: white;
+}  
+button{
+    color:white;
+    text-align: center;
+    background-color:black;
+    width: 300px;
+}   
+.USE{
+    margin-left: 20px;
+}   
+*{
+    text-decoration: none;
+}
+.Color{
+    color: blue;
+}
